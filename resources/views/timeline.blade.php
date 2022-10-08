@@ -29,7 +29,7 @@
         <div class="border p-5 rounded-xl">
           <h1 class="font-semibold mb-5">Recentlu follows</h1>
           <div class="space-y-5">
-            @foreach (Auth::user()->follows as $user)
+            @foreach (Auth::user()->follows()->limit(4)->get() as $user)
               <div class="flex ml-6 items-center">
                 <div class="flex-shrink-0 mr-3">
                   <img class="w-10 h-10 rounded-full" src="https://i.pravatar.cc/150" alt="{{ $status->user->name }}">
