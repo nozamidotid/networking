@@ -18,8 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/dashboard', 'dashboard')->middleware(['auth'])->name('dashboard');
+Route::middleware('auth')->group(function(){
+    Route::view('/dashboard', 'dashboard')->name('dashboard');
+    Route::get('timeline', TimelineController::class)->name('timeline');
+});
 
-Route::get('timeline', TimelineController::class)->name('timeline');
 
 require __DIR__.'/auth.php';
