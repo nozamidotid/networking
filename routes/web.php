@@ -24,9 +24,9 @@ Route::middleware('auth')->group(function(){
     Route::view('/dashboard', 'dashboard')->name('dashboard');
     Route::get('timeline', TimelineController::class)->name('timeline');
     Route::post('status', [StatusController::class, 'store'])->name('status.store');
-
-    Route::get('profile/{user}', ProfileInformationController::class)->name('profile');
 });
+
+Route::get('profile/{user}', ProfileInformationController::class)->name('profile');
 
 
 require __DIR__.'/auth.php';
