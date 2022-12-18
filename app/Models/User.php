@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\FollowingTrait;
 use Illuminate\Support\Str;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
@@ -10,7 +11,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, FollowingTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -62,21 +63,6 @@ class User extends Authenticatable
         ]);
     }
 
-    public function follows()
-    {
-        return $this->belongsToMany(User::class, 'follows', 'user_id', 'following_user_id')->withTimestamps();
-    }
-
-    public function followers()
-    {
-        return $this->belongsToMany(User::class, 'follows', 'following_user_id', 'user_id');
-    }
-
-    public function follow(User $user)
-    {
-        return $this->follows()->save($user);
-    }
-
     public function timeline()
     {
         $following = $this->follows->pluck('id');
@@ -85,4 +71,5 @@ class User extends Authenticatable
                         ->latest()
                         ->get();
     }
+
 }

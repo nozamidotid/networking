@@ -15,6 +15,9 @@
                     <x-nav-link :href="route('timeline')" :active="request()->routeIs('timeline')">
                         {{ __('Timeline') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                        {{ __('Explore Users') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -35,10 +38,16 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            <!-- Authentication -->
                             <x-dropdown-link href="{{ route('profile', Auth::user()->username) }}">
                                 View Profile
                             </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('profile.edit') }}">
+                                Update Profile
+                            </x-dropdown-link>
+                            <x-dropdown-link href="{{ route('password.edit') }}">
+                                Change Password
+                            </x-dropdown-link>
+                            <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
 
@@ -80,6 +89,9 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('timeline')" :active="request()->routeIs('timeline')">
                 {{ __('Timeline') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
+                {{ __('Explore Users') }}
             </x-responsive-nav-link>
         </div>
 

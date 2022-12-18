@@ -38,7 +38,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::bind('user', function($user)
         {
-            return User::where('username', $user)->firstOrFail();
+            return User::where('id', $user)->orWhere('username', $user)->firstOrFail();
         });
         
         $this->configureRateLimiting();

@@ -16,13 +16,14 @@
       </div>
     </x-container>
   </div>
-
-  <x-statistics :user="$user" />
+  <div class="border-b mb-5">
+    <x-statistics :user="$user" />
+  </div>
 
   <x-container>
     <div class="grid grid-cols-2">
       <div class="space-y-5">
-        <x-statuses :statuses="$statuses" />
+        <x-following :users=$follows></x-following>
       </div>
     </div>
   </x-container>
