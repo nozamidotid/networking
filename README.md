@@ -46,7 +46,7 @@
 
 ## About The Project
 
-This project is from youtube tutorial [Parsinta] (https://www.youtube.com/playlist?list=PLRKMmwY3-5MwADhthqRaewl-7e7AhjpP8).
+This project is from youtube tutorial [Parsinta](https://www.youtube.com/playlist?list=PLRKMmwY3-5MwADhthqRaewl-7e7AhjpP8).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,11 +84,11 @@ List things you need to use the software and how to install them.
 
 1. Clone the repo and enter the directory
     ```sh
-    git clone https://github.com/CahBantul/vehicle-sales-api.git && cd vehicle-sales-api
+    git clone https://github.com/CahBantul/networking.git && cd vehicle-sales-api
     ```
 2. Install packages
     ```sh
-    composer update
+    composer install
     ```
 3. rename file `.env.example` become `.env`. I use the default configuration
 
@@ -109,13 +109,6 @@ List things you need to use the software and how to install them.
     the app running on [http://localhost:8000/](http://localhost:8000/)
     <p align="right">(<a href="#top" >back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-For postman documentation of this api _please refer to the [Documentation](https://documenter.getpostman.com/view/11537842/VUjTihVy)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -148,7 +141,7 @@ Distributed under the MIT License.
 
 Your Name - [@fardannozami](https://twitter.com/fardannozami)
 
-Project Link: [https://github.com/CahBantul/vehicle-sales-api.git](https://github.com/CahBantul/vehicle-sales-api.git)
+Project Link: [https://github.com/CahBantul/vehicle-sales-api.git](https://github.com/CahBantul/networking.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -158,15 +151,7 @@ Project Link: [https://github.com/CahBantul/vehicle-sales-api.git](https://githu
 
 List resources helpful and I would like to give credit to.
 
--   [https://laravel.com/docs/8.x/](https://laravel.com/docs/8.x/)
--   [https://www.youtube.com/watch?v=o2BNBHEOqI0](https://www.youtube.com/watch?v=o2BNBHEOqI0)
--   [https://github.com/jenssegers/laravel-mongodb](https://github.com/jenssegers/laravel-mongodb)
--   [https://stackoverflow.com/questions/62063796/how-to-extend-php-laravel-models-fillable-fields-in-a-child-class](https://stackoverflow.com/questions/62063796/how-to-extend-php-laravel-models-fillable-fields-in-a-child-class)
--   [https://www.contohapps.com/2021/09/membuat-api-menggunakan-laravel-8.html](https://www.contohapps.com/2021/09/membuat-api-menggunakan-laravel-8.html)
--   [Panduan Singkat Menggunakan Postman](https://kotakode.com/blogs/16235/Panduan-Singkat-Menggunakan-Postman)
--   [https://cerwyn.medium.com/laravel-generalizing-api-response-error-handling-85646a195fea](https://cerwyn.medium.com/laravel-generalizing-api-response-error-handling-85646a195fea)
--   [https://khajehossini.medium.com/use-jwt-in-laravel-and-mongodb-8aea197d4949](https://khajehossini.medium.com/use-jwt-in-laravel-and-mongodb-8aea197d4949)
--   [https://www.twilio.com/blog/unit-testing-laravel-api-phpunit](https://www.twilio.com/blog/unit-testing-laravel-api-phpunit)
+-   [Parsinta Youtube Channel](https://www.youtube.com/playlist?list=PLRKMmwY3-5MwADhthqRaewl-7e7AhjpP8)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 ````
