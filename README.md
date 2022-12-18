@@ -90,19 +90,23 @@ List things you need to use the software and how to install them.
     ```sh
     composer install
     ```
-3. rename file `.env.example` become `.env`. I use the default configuration
+3. Install packages
+    ```sh
+    npm run dev
+    ```
+4. rename file `.env.example` become `.env`. I use the default configuration
 
     ```sh
     cp .env.example .env
     ```
 
-4. seeding data dummy
+5. seeding data dummy
 
     ```sh
     php artisan db:seed
     ```
 
-5. run the app
+6. run the app
     ```sh
     php artisan serve
     ```
