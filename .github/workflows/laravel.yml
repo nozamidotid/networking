@@ -20,4 +20,3 @@ jobs:
           script: |
             cd /var/www/html/networking
             sudo git pull
-            ls -lah
