@@ -16,7 +16,6 @@ class TimelineController extends Controller
     public function __invoke(Request $request)
     {
         $statuses = auth()->user()->timeline();
-        dd($statuses);
         return view('timeline', compact('statuses'));
     }
 }
